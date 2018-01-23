@@ -1,0 +1,62 @@
+/* -----------------------------------------------------------------------------
+		FONT FACE
+	----------------------------------------------------------------------------- */
+
+	@font-face{
+	    font-family: 'PN';
+	    font-weight: 200;
+	    src: url('../fonts/236DF4_0_0.eot');
+	    src: url('../fonts/236DF4_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/236DF4_0_0.woff') format('woff'),url('../fonts/236DF4_0_0.ttf') format('truetype');
+	}
+
+	@font-face{
+	    font-family: 'PN';
+	    font-weight: 300;
+	    src: url('../fonts/236DF4_2_0.eot');
+	    src: url('../fonts/236DF4_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/236DF4_2_0.woff') format('woff'),url('../fonts/236DF4_2_0.ttf') format('truetype');
+	}
+
+	@font-face{
+	    font-family: 'PN';
+	    font-weight: 400;
+	    src: url('../fonts/236DF4_1_0.eot');
+	    src: url('../fonts/236DF4_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/236DF4_1_0.woff') format('woff'),url('../fonts/236DF4_1_0.ttf') format('truetype');
+	}
+
+	@font-face{
+	    font-family: 'PN';
+	    font-weight: 500;
+	    src: url('../fonts/236DF4_3_0.eot');
+	    src: url('../fonts/236DF4_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/236DF4_3_0.woff') format('woff'),url('../fonts/236DF4_3_0.ttf') format('truetype');
+	}
+
+	
+	@mixin font_light {
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	@mixin font_lightI {
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	@mixin font_regular {
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@mixin font_regularI {
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	@mixin font_bold {
+		font-style: normal;
+		font-weight: 500;
+	}
+
+	@mixin font_boldI {
+		font-style: italic;
+		font-weight: 500;
+	}

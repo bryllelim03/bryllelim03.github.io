@@ -1,0 +1,22 @@
+footer {
+	//Default styles 
+
+	@include screen(desktop) {
+		//For Desktop screen
+	}
+	@include screen(tablet) {
+		//For Tablet (991px below)
+	}
+	@include screen(mobile) {
+		//For large screen mobile (767px below)
+	}
+	@include screen(m-mobile) {
+		//For medium screen mobile (480px below)
+	}
+	@include screen(s-mobile) {
+		//For small screen mobile (320px below)
+	}
+
+	// Use only for other Viewport size
+	// @include screen(custom, max, 400) { }
+}

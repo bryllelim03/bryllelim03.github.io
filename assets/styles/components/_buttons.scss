@@ -1,0 +1,20 @@
+//Default styles 
+
+@include screen(desktop) {
+	//For small desktop screen
+}
+@include screen(tablet) {
+	//For Tablet
+}
+@include screen(mobile) {
+	//For large screen mobile
+}
+@include screen(m-mobile) {
+	//For medium screen mobile
+}
+@include screen(s-mobile) {
+	//For small screen mobile
+}
+
+// Use only for other Viewport size
+// @include screen(custom, max, 400) { }

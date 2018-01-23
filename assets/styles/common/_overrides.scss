@@ -1,0 +1,27 @@
+.admin-bar {
+	header{
+	    margin-top: 31px;
+	}	
+}
+
+.lock-position{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+@include screen(custom, max, 782) { 
+	.admin-bar {
+		header{
+		    margin-top: 45px;
+		}
+	}
+}
+
+@include screen(custom, max, 600) { 
+	#wpadminbar {
+        position: fixed;
+    }
+}

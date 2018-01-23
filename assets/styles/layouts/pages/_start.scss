@@ -1,0 +1,44 @@
+//Default styles 
+#projects{
+	margin-top: -281px;
+	.social-icons{
+		padding-left: 0;
+		margin-bottom: 13px;
+		li{
+			display: inline-block;
+			margin: 0 11px;
+			.fa{
+				font-size: 24px;
+				// color: $white;
+				color: #323b3f;
+			}
+			&:first-of-type{
+				margin-left: 0;
+			}
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+
+@include screen(desktop) {
+	//For Desktop screen
+}
+@include screen(tablet) {
+	//For Tablet (991px below)
+
+}
+@include screen(mobile) {
+	//For large screen mobile (767px below)
+}
+@include screen(m-mobile) {
+	//For medium screen mobile (480px below)
+}
+@include screen(s-mobile) {
+	//For small screen mobile (320px below)
+}
+
+// Use only for other Viewport size
+// @include screen(custom, max, 400) { }

@@ -1,0 +1,39 @@
+#banner {
+	//Default styles 
+	@include fsBG('');
+	position: relative;
+	padding-top: 228px;
+    padding-bottom: 442px;
+    
+	.screen{
+	    position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($white, 0.7);
+		z-index: 0;
+	}
+
+	@include screen(desktop) {
+		//For Desktop screen
+	}
+	@include screen(tablet) {
+		//For Tablet (991px below)
+	}
+	@include screen(mobile) {
+		//For large screen mobile (767px below)
+
+		padding-top: 165px;
+		padding-bottom: 400px;
+	}
+	@include screen(m-mobile) {
+		//For medium screen mobile (480px below)
+	}
+	@include screen(s-mobile) {
+		//For small screen mobile (320px below)
+	}
+
+	// Use only for other Viewport size
+	// @include screen(custom, max, 400) { }
+}

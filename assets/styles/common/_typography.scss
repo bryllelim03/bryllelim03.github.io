@@ -1,0 +1,81 @@
+//Default styles 
+html{
+	font-size: 62.5%;
+	font-weight: 400;
+}
+
+body{
+	// color: $white;
+	color: #323b3f;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+}
+
+h1 { 
+	@include font-size(72); 
+    margin-bottom: 12px;
+}
+
+h2 { 
+	@include font-size(36); 
+}
+
+h3 { 
+	@include font-size(30); 
+}
+
+h4 { @include font-size(26); }
+
+h5 { @include font-size(20); }
+
+h6 { @include font-size(16); }
+
+p { margin-bottom: 15px; }
+
+em { font-style: italic; }
+
+a {
+	&:hover {
+		
+	}
+	&:focus {
+		
+	}
+}
+
+a, button {
+	&:focus {
+		
+	}
+}
+
+
+
+@include screen(desktop) {
+	//For small desktop screen
+}
+@include screen(tablet) {
+	//For Tablet (991px below)
+}
+@include screen(mobile) {
+	//For large screen mobile (767px below)
+
+	html{
+		font-size: 45.5%;
+	}
+}
+@include screen(m-mobile) {
+	//For medium screen mobile (480px below)
+}
+@include screen(s-mobile) {
+	//For small screen mobile (320px below)
+
+	html{
+	    font-size: 36.5%;
+	}
+}
+
+// Use only for other Viewport size
+// @include screen(custom, max, 400) { }

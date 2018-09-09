@@ -1,0 +1,1382 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <title>
+    {% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}
+    </title>
+    <!--[if !mso]><!-- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    #outlook a { padding:0; }
+    .ReadMsgBody { width:100%; }
+    .ExternalClass { width:100%; }
+    .ExternalClass * { line-height:100%; }
+    body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+    table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+    img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+    p { display:block;margin:13px 0; }
+    </style>
+    <!--[if !mso]><!-->
+    <style type="text/css">
+    @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+    }
+    </style>
+    <!--<![endif]-->
+    <!--[if mso]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if lte mso 11]>
+    <style type="text/css">
+    .outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+    </style>
+    <!--<![endif]-->
+    <style type="text/css">
+    @media only screen and (min-width:480px) {
+    .mj-column-per-100 { width:100% !important; }
+    .mj-column-per-50 { width:50% !important; }
+    .mj-column-per-35 { width:35% !important; }
+    }
+    </style>
+    <style type="text/css">
+    [owa] .mj-column-per-100 { width:100% !important; }
+    [owa] .mj-column-per-50 { width:50% !important; }
+    [owa] .mj-column-per-35 { width:35% !important; }
+    </style>
+    <style type="text/css">
+    noinput.mj-menu-checkbox { display:block!important; max-height:none!important; visibility:visible!important; }
+    @media only screen and (max-width:480px) {
+    .mj-menu-checkbox[type="checkbox"] ~ .mj-inline-links { display:none!important; }
+    .mj-menu-checkbox[type="checkbox"]:checked ~ .mj-inline-links,
+    .mj-menu-checkbox[type="checkbox"] ~ .mj-menu-trigger { display:block!important; max-width:none!important; max-height:none!important; font-size:inherit!important; }
+    .mj-menu-checkbox[type="checkbox"] ~ .mj-inline-links > a { display:block!important; }
+    .mj-menu-checkbox[type="checkbox"]:checked ~ .mj-menu-trigger .mj-menu-icon-close { display:block!important; }
+    .mj-menu-checkbox[type="checkbox"]:checked ~ .mj-menu-trigger .mj-menu-icon-open { display:none!important; }
+    }
+    </style>
+    <style type="text/css">@media screen and (max-width: 479px) { .text-content { padding-left: 30px !important; padding-right: 30px !important; } .img-full td { display: block; width: 100% !important; } }</style>
+  </head>
+  <body style="background-color:#eee;">
+    <div style="background-color:#eee;">
+      <!--[if mso | IE]>
+      <table
+        align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+        >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+            <![endif]-->
+            <div style="background:#eee;background-color:#eee;Margin:0px auto;max-width:600px;">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#eee;background-color:#eee;width:100%;">
+                <tbody>
+                  <tr>
+                    <td style="direction:ltr;font-size:0px;padding:0;padding-bottom:10px;padding-top:10px;text-align:center;vertical-align:top;">
+                      <!--[if mso | IE]>
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td
+                            style="vertical-align:top;width:600px;"
+                            >
+                            <![endif]-->
+                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                              <table background="#eee" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="background-color:#eee;vertical-align:top;padding:0;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <!-- Preview text (text which appears right after subject in certain email clients) -->
+                                        <div id="preview_text" style="display:none!important">{% text "preview_text" label="Preview Text <span class="help-text">This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}</div>
+                                        <!-- View as webpage link -->
+                                        {% if content.create_page %}
+                                          <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px;color:#555555;">Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" data-viewaswebpage="true" href="{{ view_as_page_url }}" style="color:#555;">here</a>.</div>
+                                        {% endif %}
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!--[if mso | IE]>
+                          </td>
+                        </tr>
+                      </table>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <table
+        align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+        >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+            <![endif]-->
+            <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                <tbody>
+                  <tr>
+                    <td style="direction:ltr;font-size:0px;padding:25px 10px;text-align:center;vertical-align:top;">
+                      <!--[if mso | IE]>
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td
+                            style="vertical-align:top;width:580px;"
+                            >
+                            <![endif]-->
+                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                              <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                          <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="width:222px;">
+                                                    <a href="#" target="_blank">
+                                                      <img height="auto" src="https://gdurl.com/y9LM" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="222">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!--[if mso | IE]>
+                          </td>
+                        </tr>
+                      </table>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <table
+        align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+        >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+            <![endif]-->
+            <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                <tbody>
+                  <tr>
+                    <td style="direction:ltr;font-size:0px;padding:0;padding-bottom:10px;padding-top:10px;text-align:center;vertical-align:top;">
+                      <!--[if mso | IE]>
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td
+                            style="vertical-align:top;width:600px;"
+                            >
+                            <![endif]-->
+                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                              <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                          <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                            <!--[if !mso><!-->
+                                            <input type="checkbox" id="f2eb23a0abeb4244" class="mj-menu-checkbox" style="display:none !important; max-height:0; visibility:hidden;">
+                                            <!--<![endif]-->
+                                            <div class="mj-menu-trigger" style="display:none;max-height:0px;max-width:0px;font-size:0px;overflow:hidden;">
+                                              <label for="f2eb23a0abeb4244" class="mj-menu-label" style="display:block;cursor:pointer;mso-hide:all;-moz-user-select:none;user-select:none;align:center;color:#555;font-size:30px;font-family:Ubuntu, Helvetica, Arial, sans-serif;text-transform:uppercase;text-decoration:none;line-height:30px;padding:10px;">
+                                                <span class="mj-menu-icon-open" style="mso-hide:all;">
+                                                  ☰
+                                                </span>
+                                                <span class="mj-menu-icon-close" style="display:none;mso-hide:all;">
+                                                  ⊗
+                                                </span>
+                                              </label>
+                                            </div>
+                                            <div class="mj-inline-links">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
+                                                <tr>
+                                                  <td
+                                                    style="padding:15px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px;">
+                                                      Home
+                                                    </a>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                  <td
+                                                    style="padding:15px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px;">
+                                                      Products
+                                                    </a>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                  <td
+                                                    style="padding:15px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px;">
+                                                      About
+                                                    </a>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                  <td
+                                                    style="padding:15px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:15px;">
+                                                      Contact
+                                                    </a>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                </tr></table>
+                                                <![endif]-->
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="20" style="vertical-align:top;height:20px;">
+                                                <![endif]-->
+                                                <div style="height:20px;">
+                                                  &nbsp;
+                                                </div>
+                                                <!--[if mso | IE]>
+                                              </td></tr></table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              width="600px"
+                              >
+                              <table
+                                align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+                                >
+                                <tr>
+                                  <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                    <![endif]-->
+                                    <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                  <td
+                                                    style="vertical-align:top;width:600px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                                      <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                <tr>
+                                                                  <td align="center" style="font-size:0px;padding:15px;padding-bottom:5px;word-break:break-word;">
+                                                                    <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;line-height:26px;text-align:center;color:#555;">
+                                                                      INTRODUCING
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" class="h1" style="font-size:0px;padding:15px;padding-top:0;padding-bottom:20px;word-break:break-word;">
+                                                                    <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; line-height: 26px; text-align: center; color: #555; font-size: 30px; font-weight: bold;">
+                                                                      Our New Product
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td style="width:600px;">
+                                                                            <img height="auto" src="https://source.unsplash.com/2cFZ_FB08UM" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="600">
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" class="text-content" style="font-size:0px;padding:15px;padding-right:80px;padding-bottom:30px;padding-left:80px;word-break:break-word;">
+                                                                    <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;line-height:26px;text-align:center;color:#555;">
+                                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" vertical-align="middle" style="font-size:0px;padding:0;word-break:break-word;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                                                      <tr>
+                                                                        <td align="center" bgcolor="#f45e43" role="presentation" style="border:none;border-radius:3px;color:white;cursor:auto;padding:10px 25px;" valign="middle">
+                                                                          <a href="#" style="background:#f45e43;color:white;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;" target="_blank">
+                                                                            BUY NOW
+                                                                          </a>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </table>
+                                                                  </td>
+                                                                </tr>
+                                                              </table>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!--[if mso | IE]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="50" style="vertical-align:top;height:50px;">
+                                                <![endif]-->
+                                                <div style="height:50px;">
+                                                  &nbsp;
+                                                </div>
+                                                <!--[if mso | IE]>
+                                              </td></tr></table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;padding-left:20px;padding-right:20px;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:560px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <p style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:80%;">
+                                              </p>
+                                              <!--[if mso | IE]>
+                                              <table
+                                                align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:448px;" role="presentation" width="448px"
+                                                >
+                                                <tr>
+                                                  <td style="height:0;line-height:0;">
+                                                    &nbsp;
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="50" style="vertical-align:top;height:50px;">
+                                                <![endif]-->
+                                                <div style="height:50px;">
+                                                  &nbsp;
+                                                </div>
+                                                <!--[if mso | IE]>
+                                              </td></tr></table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              width="600px"
+                              >
+                              <table
+                                align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+                                >
+                                <tr>
+                                  <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                    <![endif]-->
+                                    <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="direction:ltr;font-size:0px;padding:0;padding-left:10px;padding-right:10px;text-align:center;vertical-align:top;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                  <td
+                                                    style="vertical-align:top;width:290px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <div class="mj-column-per-50 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                                      <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="background-color:#fff;vertical-align:top;padding:10px 10px 20px;">
+                                                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                <tr>
+                                                                  <td align="center" class="img-full" style="font-size:0px;padding:0;word-break:break-word;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td style="width:270px;">
+                                                                            <a href="#" target="_blank">
+                                                                              <img height="auto" src="https://source.unsplash.com/pY_2IInLAaI" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="270">
+                                                                            </a>
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="left" class="h3" style="font-size:0px;padding:15px;padding-bottom:0;word-break:break-word;">
+                                                                    <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; line-height: 26px; text-align: left; color: #555; font-size: 20px; font-weight: bold;">
+                                                                      Your Title Here
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="left" style="font-size:0px;padding:15px;padding-top:10px;word-break:break-word;">
+                                                                    <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;line-height:26px;text-align:left;color:#555;">
+                                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                              </table>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                  <td
+                                                    style="vertical-align:top;width:290px;"
+                                                    >
+                                                    <![endif]-->
+                                                    <div class="mj-column-per-50 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                                      <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="background-color:#fff;vertical-align:top;padding:10px 10px 20px;">
+                                                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                <tr>
+                                                                  <td align="center" class="img-full" style="font-size:0px;padding:0;word-break:break-word;">
+                                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td style="width:270px;">
+                                                                            <a href="#" target="_blank">
+                                                                              <img height="auto" src="https://source.unsplash.com/YXemfQiPR_E" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="270">
+                                                                            </a>
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="left" class="h3" style="font-size:0px;padding:15px;padding-bottom:0;word-break:break-word;">
+                                                                    <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; line-height: 26px; text-align: left; color: #555; font-size: 20px; font-weight: bold;">
+                                                                      Your Title Here
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="left" style="font-size:0px;padding:15px;padding-top:10px;word-break:break-word;">
+                                                                    <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;line-height:26px;text-align:left;color:#555;">
+                                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
+                                                              </table>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <!--[if mso | IE]>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!--[if mso | IE]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="50" style="vertical-align:top;height:50px;">
+                                                <![endif]-->
+                                                <div style="height:50px;">
+                                                  &nbsp;
+                                                </div>
+                                                <!--[if mso | IE]>
+                                              </td></tr></table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;padding-left:20px;padding-right:20px;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:560px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <p style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:80%;">
+                                              </p>
+                                              <!--[if mso | IE]>
+                                              <table
+                                                align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px lightgrey;font-size:1;margin:0px auto;width:448px;" role="presentation" width="448px"
+                                                >
+                                                <tr>
+                                                  <td style="height:0;line-height:0;">
+                                                    &nbsp;
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="50" style="vertical-align:top;height:50px;">
+                                                <![endif]-->
+                                                <div style="height:50px;">
+                                                  &nbsp;
+                                                </div>
+                                                <!--[if mso | IE]>
+                                              </td></tr></table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;padding-bottom:10px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td align="center" class="h2" style="font-size:0px;padding:15px;padding-bottom:0;word-break:break-word;">
+                                              <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; line-height: 26px; text-align: center; color: #555; font-size: 24px; font-weight: bold;">
+                                                Follow Us
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="center" class="text-content" style="font-size:0px;padding:15px;padding-right:80px;padding-left:80px;word-break:break-word;">
+                                              <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;line-height:26px;text-align:center;color:#555;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="width:210px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-35 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;background-color:#fff;">
+                                <!--[if mso | IE]>
+                                <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td
+                                      style="vertical-align:top;width:105px;"
+                                      >
+                                      <![endif]-->
+                                      <div class="mj-column-per-50 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                                        <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="background-color:#fff;vertical-align:top;padding:10px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                  <tr>
+                                                    <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="width:54px;">
+                                                              <a href="#" target="_blank">
+                                                                <img height="auto" src="https://gdurl.com/qIvU" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="54">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--[if mso | IE]>
+                                    </td>
+                                    <td
+                                      style="vertical-align:top;width:105px;"
+                                      >
+                                      <![endif]-->
+                                      <div class="mj-column-per-50 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                                        <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="background-color:#fff;vertical-align:top;padding:10px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                  <tr>
+                                                    <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="width:54px;">
+                                                              <a href="#" target="_blank">
+                                                                <img height="auto" src="https://gdurl.com/z3EG" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="54">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--[if mso | IE]>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <![endif]-->
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                            <td
+                              style="width:210px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-35 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;background-color:#fff;">
+                                <!--[if mso | IE]>
+                                <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td
+                                      style="vertical-align:top;width:105px;"
+                                      >
+                                      <![endif]-->
+                                      <div class="mj-column-per-50 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                                        <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="background-color:#fff;vertical-align:top;padding:10px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                  <tr>
+                                                    <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="width:54px;">
+                                                              <a href="#" target="_blank">
+                                                                <img height="auto" src="https://gdurl.com/3sX8" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="54">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--[if mso | IE]>
+                                    </td>
+                                    <td
+                                      style="vertical-align:top;width:105px;"
+                                      >
+                                      <![endif]-->
+                                      <div class="mj-column-per-50 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;">
+                                        <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="background-color:#fff;vertical-align:top;padding:10px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                  <tr>
+                                                    <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="width:54px;">
+                                                              <a href="#" target="_blank">
+                                                                <img height="auto" src="https://gdurl.com/OuVk" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="54">
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--[if mso | IE]>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <![endif]-->
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#fff;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td style="font-size:0px;padding:0;word-break:break-word;">
+                                              <!--[if mso | IE]>
+                                              <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="50" style="vertical-align:top;height:50px;">
+                                                <![endif]-->
+                                                <div style="height:50px;">
+                                                  &nbsp;
+                                                </div>
+                                                <!--[if mso | IE]>
+                                              </td></tr></table>
+                                              <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:600px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#000000" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#000000;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <tr>
+                                            <td align="center" style="font-size:0px;padding:15px;word-break:break-word;">
+                                              <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:14px;line-height:18px;text-align:center;color:#ffffff;">
+                                                {{ site_settings.company_name }}&nbsp;
+                                                {{ site_settings.company_street_address_1 }}&nbsp;
+                                                {{ site_settings.company_street_address_2 }}&nbsp;
+                                                {{ site_settings.company_city }}&nbsp;
+                                                {{ site_settings.company_state }}&nbsp;
+                                                {{ site_settings.company_zip }}&nbsp;
+                                                {{ site_settings.company_country }}&nbsp;
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <table
+          align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+          >
+          <tr>
+            <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+              <![endif]-->
+              <div style="background:#eee;background-color:#eee;Margin:0px auto;max-width:600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#eee;background-color:#eee;width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:15px 10px;text-align:center;vertical-align:top;">
+                        <!--[if mso | IE]>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td
+                              style="vertical-align:top;width:580px;"
+                              >
+                              <![endif]-->
+                              <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                                <table background="#eee" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="background-color:#eee;vertical-align:top;padding:0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                          <table width="100%" cellspacing="0" cellpadding="0" background-color="#eee">
+                                            <tr>
+                                              <td align="center" style="font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px;color:#555555;">
+                                                Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}" style="color:#555;">email preferences</a> to choose the types of emails you receive.
+                                                <br><br>
+                                                <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}" style="color:#555;">Unsubscribe from all future emails</a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!--[if mso | IE]>
+                            </td>
+                          </tr>
+                        </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+      </div>
+    </body>
+  </html>

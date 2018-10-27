@@ -46,7 +46,7 @@ gulp.task('copyfonts', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['./bower_components/jquery/dist/jquery.min.js', './assets/scripts/main.js'])
+	return gulp.src(['./bower_components/jquery/dist/jquery.min.js', './bower_components/jquery-touch-events/src/jquery.mobile-events.min.js', './assets/scripts/main.js'])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/scripts'))

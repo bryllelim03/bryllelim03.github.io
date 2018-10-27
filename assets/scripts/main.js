@@ -263,10 +263,16 @@
 		$( '.list' ).on( 'swipeup', function( ) {
 			if( !Scrolling.scrollTl.isActive() ) {
 				Scrolling.down();
+
+				Scrolling.scrollY( Scrolling.scrollValue );
+		    ScrollIndicator.checker();
 			}
 		} ).on( 'swipedown', function() {
 			if( !Scrolling.scrollTl.isActive() ) {
 				Scrolling.up();
+				
+				Scrolling.scrollY( Scrolling.scrollValue );
+		    ScrollIndicator.checker();
 			}
 		} );
 

@@ -270,7 +270,7 @@
 			}
 		} );
 
-		$( window ).bind( 'DOMMouseScroll mousewheel', function( e ) {
+		$( window ).bind( 'wheel', function( e ) {
 	    if( !Scrolling.scrollTl.isActive() ) {
 	    	if( e.originalEvent.deltaY >= 0 ) {
 	    		//scrolling down

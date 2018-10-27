@@ -1,0 +1,123 @@
+//Default styles 
+body{
+	//background-color: #323b3f;
+	background-color: $white;
+	// @include transitions (all 0.5s ease-in);
+}
+
+.loader{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: $white;
+}
+
+.spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    h2{
+    	margin-top: 30px;
+    }
+    span{
+    	@include center(both);
+    	margin-top: 65px;
+	    @include font-size(24);
+	    font-weight: 200;
+	    color: #323b3f;
+    }
+}
+
+.double-bounce1, .double-bounce2 {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: #323b3f;
+	opacity: 0.6;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+	0%, 100% { -webkit-transform: scale(0.0) }
+	50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+	0%, 100% { 
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	} 50% { 
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+
+.anmte{
+	*{
+		@include transitions (all 0.8s ease-out);
+	}
+}
+
+.a-left, .a-right, .a-top, .a-text-left, .a-text-right{
+	opacity: 0;
+}
+
+.a-left{
+	transform: translate(15px,0);
+}
+
+.a-right{
+	transform: translate(-15px,0);
+}
+
+.a-top{
+	transform: translate(0,15px);
+}
+
+.a-text-left{
+	margin-right: -15px;
+}
+
+.a-text-right{
+	margin-left: -15px;
+}
+
+
+@include screen(desktop) {
+	//For Desktop screen
+}
+@include screen(tablet) {
+	//For Tablet (991px below)
+}
+@include screen(mobile) {
+	//For large screen mobile (767px below)
+}
+@include screen(m-mobile) {
+	//For medium screen mobile (480px below)
+}
+@include screen(s-mobile) {
+	//For small screen mobile (320px below)
+}
+
+// Use only for other Viewport size
+// @include screen(custom, max, 400) { }

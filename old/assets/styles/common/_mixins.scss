@@ -8,41 +8,41 @@
 		Mixin Media Queries
 	----------------------------------------------------------------------------- */
 
-	// $breakpoint-desktop: $screen-md-max;
-	// $breakpoint-tablet: $screen-sm-max;
-	// $breakpoint-mobile: $screen-xs-max;
-	// $breakpoint-m-mobile: $screen-xs-min;
-	// $breakpoint-s-mobile: 320px;
+	$breakpoint-desktop: $screen-md-max;
+	$breakpoint-tablet: $screen-sm-max;
+	$breakpoint-mobile: $screen-xs-max;
+	$breakpoint-m-mobile: $screen-xs-min;
+	$breakpoint-s-mobile: 320px;
 
-	// @mixin screen($size, $type: max, $pixels: $breakpoint-desktop) {
-	// 	@if $size == 'desktop' {
-	// 		@media screen and ($type + -width: $breakpoint-desktop) {
-	// 			@content;
-	// 		}
-	// 	} @else if $size == 'tablet' {
-	// 		@media screen and ($type + -width: $breakpoint-tablet) {
-	// 			@content;
-	// 		}
-	// 	} @else if $size == 'mobile' {
-	// 		@media screen and ($type + -width: $breakpoint-mobile) {
-	// 			@content;
-	// 		}
-	// 	} @else if $size == 'm-mobile' {
-	// 		@media screen and ($type + -width: $breakpoint-m-mobile) {
-	// 			@content;
-	// 		}
-	// 	} @else if $size == 's-mobile' {
-	// 		@media screen and ($type + -width: $breakpoint-s-mobile) {
-	// 			@content;
-	// 		}
-	// 	} @else if $size == 'custom' {
-	// 		@media screen and ($type + -width: $pixels + px) {
-	// 			@content;
-	// 		}
-	// 	} @else {
-	// 		@content;
-	// 	}
-	// }
+	@mixin screen($size, $type: max, $pixels: $breakpoint-desktop) {
+		@if $size == 'desktop' {
+			@media screen and ($type + -width: $breakpoint-desktop) {
+				@content;
+			}
+		} @else if $size == 'tablet' {
+			@media screen and ($type + -width: $breakpoint-tablet) {
+				@content;
+			}
+		} @else if $size == 'mobile' {
+			@media screen and ($type + -width: $breakpoint-mobile) {
+				@content;
+			}
+		} @else if $size == 'm-mobile' {
+			@media screen and ($type + -width: $breakpoint-m-mobile) {
+				@content;
+			}
+		} @else if $size == 's-mobile' {
+			@media screen and ($type + -width: $breakpoint-s-mobile) {
+				@content;
+			}
+		} @else if $size == 'custom' {
+			@media screen and ($type + -width: $pixels + px) {
+				@content;
+			}
+		} @else {
+			@content;
+		}
+	}
 
 
 	/* -----------------------------------------------------------------------------

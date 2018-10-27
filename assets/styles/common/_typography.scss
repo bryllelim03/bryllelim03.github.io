@@ -1,81 +1,48 @@
-//Default styles 
-html{
+html {
 	font-size: 62.5%;
-	font-weight: 400;
 }
 
-body{
-	// color: $white;
-	color: #323b3f;
+body {
+	font-family: 'Krub', sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	color: #e6e6e6;
 }
 
-h1, h2, h3, h4, h5, h6{
-	font-weight: 200;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: normal;
 }
 
-h1 { 
-	@include font-size(72); 
-    margin-bottom: 12px;
+h1, .h1 {
+	font-size: 4rem;
 }
 
-h2 { 
-	@include font-size(36); 
+.h1--large {
+	font-size: 6rem;
 }
 
-h3 { 
-	@include font-size(30); 
+h2, .h2 {
+	font-size: 3.6rem;
 }
 
-h4 { @include font-size(26); }
+h3, .h3 {
+	font-size: 3.2rem;
+}
 
-h5 { @include font-size(20); }
+h4, .h4 {
+	font-size: 2.8rem;
+}
 
-h6 { @include font-size(16); }
+h5, .h5 {
+	font-size: 2.2rem;
+}
 
-p { margin-bottom: 15px; }
-
-em { font-style: italic; }
+h6, .h6 {
+	font-size: 1.8rem;
+}
 
 a {
-	&:hover {
-		
-	}
-	&:focus {
-		
-	}
+	color: #e6e6e6;
 }
-
-a, button {
-	&:focus {
-		
-	}
-}
-
-
-
-@include screen(desktop) {
-	//For small desktop screen
-}
-@include screen(tablet) {
-	//For Tablet (991px below)
-}
-@include screen(mobile) {
-	//For large screen mobile (767px below)
-
-	html{
-		font-size: 45.5%;
-	}
-}
-@include screen(m-mobile) {
-	//For medium screen mobile (480px below)
-}
-@include screen(s-mobile) {
-	//For small screen mobile (320px below)
-
-	html{
-	    font-size: 36.5%;
-	}
-}
-
-// Use only for other Viewport size
-// @include screen(custom, max, 400) { }

@@ -1,6 +1,5 @@
-<!doctype html>
-
-<html lang="en" class="lock-position">
+<!DOCTYPE html>
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,278 +9,190 @@
 		<meta name="description" content="Frontend Web Developer">
 		<meta name="author" content="Brylle Adrian Lim">
 		<meta name="robots" content="noindex">
-		
-		
 
-		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+
+		<link rel="stylesheet" href="dist/styles/main.css">
+
 	</head>
+	<body>
+		<button class="burger is-close"><span></span><span></span><span></span><span></span><span></span></button>
 
-	<body class="lock-position">
-		<div class="loader">
-			<div class="spinner">
-				<!-- <h2>Apologies. My Website's contents and functionalities are still incomplete.</h2> -->
-				<span>loading...</span>
-				<div class="double-bounce1"></div>
-				<div class="double-bounce2"></div>
+		<div class="nav-loader background" style="background-image: url('https://source.unsplash.com/UFV6k2eH3c8.jpg');">
+			<div class="container flex flex--full-height flex--v-center">
+				<div class="about">
+					<h1 class="h1--large js-animate-navText">Brylle Adrian Lim</h1>
+					<div class="h2 js-animate-navText">Front-end Web Developer</div>
+					<div class="h5 js-animate-navText">Currently living in Tokyo, Japan</div>
+					
+					<ul class="social-list">
+						<li><a href="files/Brylle Adrian Lim - RESUME.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:brylle_lim03@yahoo.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://ph.linkedin.com/in/brylle-adrian-lim-64296a93" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<!-- <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li> -->
+					</ul>
+				</div>
+
+				<div class="loader"><span></span><span></span><span></span></div>
 			</div>
 		</div>
 
-		<header style="position: absolute;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 col-md-offset-10 anmte">
-						<div class="nav-logo a-right">
-							<a href=""><img src="dist/images/logo-2.png" alt="Logo" /></a>
-						</div>
-						<!-- <nav>
-							<ul class="a-left">
-								<li><a href="#" class="link-projects">projects</a></li>
-								<li><a href="#" class="link-about">about</a></li>
-								<li><a href="#">contact</a></li>
-							</ul>
-						</nav> -->
-					</div>
+		<div class="list">
+			<a href="https://watch.hbonordic.com/en/game-of-thrones" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/T4Qy1U7utQA');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/got-2.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Game of Thrones</div>
+					<div class="list__type">Landing Page | Information</div>
 				</div>
-			</div>
-		</header>
-		
-		<section id="banner" style="background-image: url('dist/images/pexels-photo.jpg');">
-			<div class="screen"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 anmte">
-						<h1 class="a-left">brylle adrian lim</h1>
-						<h2 class="a-right">front-end web developer at stokmanila</h2>
-						<!-- <h4 class="a-right">an experimental website using VueJS and GraphQL</h4> -->
-					</div>
-				</div>
-			</div>
-		</section>
+			</a>
 
-		<section id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 anmte">
-						<ul class="social-icons a-right">
-							<li><a href="files/Brylle Adrian Lim - RESUME.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i></a></li>
-							<li><a href="mailto:brylle_lim03@yahoo.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-							<li><a href="https://ph.linkedin.com/in/brylle-adrian-lim-64296a93" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-							<!-- <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li> -->
-						</ul>
-					</div>
+			<a href="http://www.softgoat.com/en/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/tBMD7BDcG3o');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/softgoat.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Softgoat</div>
+					<div class="list__type">E-commerce</div>
 				</div>
-			</div>
-			<div class="container">
-				<!-- <div class="row project-row">
-					<div class="col-md-8 project-item">
-						<a href="https://watch.hbonordic.com/en/westworld" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/westworld.jpg');"></div>
-							<div class="project-item-text text-middle text-right a-text-right">
-								<span>information</span>
-								<h3>hbo westworld</h3>
-							</div>
-						</a>
-					</div>
-				</div> -->
-				<div class="row project-row">
-					<div class="col-md-10 project-item">
-						<a href="https://watch.hbonordic.com/en/game-of-thrones" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/got.jpg');"></div>
-							<div class="project-item-text text-middle text-right a-text-right">
-								<span>information</span>
-								<h3>game of thrones</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row project-row">
-					<div class="col-md-4 project-item">
-						<a href="http://www.softgoat.com/en/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/softgoat.jpg');" class="anmte"></div>
-							<div class="project-item-text text-bottom text-right a-text-right">
-								<span>e-commerce</span>
-								<h3>softgoat</h3>
-							</div>
-						</a>
-					</div>
+			</a>
 
-					<div class="col-md-offset-2 col-md-6 project-item">
-						<a href="http://www.bymalina.com/en/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/bymalina.jpg');"></div>
-							<div class="project-item-text text-top text-left a-text-left">
-								<span>e-commerce</span>
-								<h3>by malina</h3>
-							</div>
-						</a>
-					</div>
+			<a href="http://www.bymalina.com/en/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/MMUwHdk_6HE');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/bymalina.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">By Malina</div>
+					<div class="list__type">E-commerce</div>
 				</div>
-				<div class="row project-row">
-					<div class="col-md-8 col-md-offset-3 project-item">
-						<a href="http://fallmanskott.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/fallmans.jpg');"></div>
-							<div class="project-item-text text-middle text-left a-text-left">
-								<span>information | blog</span>
-								<h3>fallmanskott</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row project-row">
-					<div class="col-md-10 project-item">
-						<a href="http://orterochsallat.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/orter.jpg');"></div>
-							<div class="project-item-text text-middle text-right a-text-right">
-								<span>information | blog</span>
-								<h3>sveriges ört- & sallatsodlare</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row project-row">
-					<div class="col-md-5 project-item">
-						<a href="http://gustenpersson.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/gusten.jpg');"></div>
-							<div class="project-item-text text-bottom text-right a-text-right">
-								<span>information</span>
-								<h3>gusten persson</h3>
-							</div>
-						</a>
-					</div>
+			</a>
 
-					<div class="col-md-offset-2 col-md-5 project-item">
-						<a href="http://www.drkn.com/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/drkn.jpg');"></div>
-							<div class="project-item-text text-top text-left a-text-left">
-								<span>e-commerce</span>
-								<h3>drkn</h3>
-							</div>
-						</a>
-					</div>
+			<a href="http://fallmanskott.se/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/ArDmqVZ9dd8');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/fallmans.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Fallmanskott</div>
+					<div class="list__type">Information | Blog</div>
 				</div>
-				<div class="row project-row">
-					<div class="col-md-8 col-md-offset-4 project-item">
-						<a href="http://www.saltcommunication.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/salt.jpg');"></div>
-							<div class="project-item-text text-middle text-left a-text-left">
-								<span>information | blog</span>
-								<h3>salt food and communication</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row project-row">
-					<div class="col-md-6 project-item">
-						<a href="http://100million.mynewsdesk.com/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/mnd-100million.jpg');"></div>
-							<div class="project-item-text text-bottom text-right a-text-right">
-								<span>information</span>
-								<h3>mynewsdesk 100 million</h3>
-							</div>
-						</a>
-					</div>
+			</a>
 
-					<div class="col-md-offset-2 col-md-4 project-item">
-						<a href="http://learn.mynewsdesk.com/en/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/mnd-learn.jpg');"></div>
-							<div class="project-item-text text-top text-left a-text-left">
-								<span>information</span>
-								<h3>mynewsdesk learn</h3>
-							</div>
-						</a>
-					</div>
+			<a href="http://orterochsallat.se/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/1vuGyilXavU');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/orter.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Sveriges ört- & Sallatsodlare</div>
+					<div class="list__type">Information | Blog</div>
 				</div>
-				<div class="row project-row">
-					<div class="col-md-10 project-item">
-						<a href="http://futurecomms.co/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/mnd.png');"></div>
-							<div class="project-item-text text-middle text-right a-text-right">
-								<span>event</span>
-								<h3>mynewsdesk futurecomms</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row project-row">
-					<div class="col-md-4 project-item">
-						<a href="http://timraexpress.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/timra.jpg');" class="anmte"></div>
-							<div class="project-item-text text-bottom text-right a-text-right">
-								<span>information</span>
-								<h3>timra express</h3>
-							</div>
-						</a>
-					</div>
+			</a>
 
-					<div class="col-md-offset-2 col-md-6 project-item">
-						<a href="http://www.litomove.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/litomove.jpg');"></div>
-							<div class="project-item-text text-top text-left a-text-left">
-								<span>e-commerce | blog</span>
-								<h3>litomove</h3>
-							</div>
-						</a>
-					</div>
+			<a href="http://gustenpersson.se/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/E3GiJfw-xzw');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/gusten.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Gusten Persson</div>
+					<div class="list__type">Information | Blog</div>
 				</div>
-				<div class="row project-row">
-					<div class="col-md-8 col-md-offset-3 project-item">
-						<a href="http://se.truetransparency.com/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/true.JPG');"></div>
-							<div class="project-item-text text-middle text-left a-text-left">
-								<span>information</span>
-								<h3>true transparency</h3>
-							</div>
-						</a>
-					</div>
+			</a>
+
+			<a href="http://www.drkn.com/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/lIat5Z-N3JA');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/drkn.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">DRKN</div>
+					<div class="list__type">E-commerce</div>
 				</div>
+			</a>
 
-				<div class="row project-row">
-					<div class="col-md-10 project-item">
-						<a href="http://www.bjorner.no/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/vitaminbjorner.jpg');"></div>
-							<div class="project-item-text text-middle text-right a-text-right">
-								<span>information</span>
-								<h3>vitaminbjørner</h3>
-							</div>
-						</a>
-					</div>
+			<a href="http://www.saltcommunication.se/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/pQoMI86FwHs');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/salt.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Salt Food and Communication</div>
+					<div class="list__type">Information | Blog</div>
 				</div>
-				<div class="row project-row">
-					<div class="col-md-5 project-item">
-						<a href="http://www.pikasol.se/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/pikasol.jpg');"></div>
-							<div class="project-item-text text-bottom text-right a-text-right">
-								<span>information</span>
-								<h3>pikasol</h3>
-							</div>
-						</a>
-					</div>
+			</a>
 
-					<!-- <div class="col-md-offset-2 col-md-4 project-item">
-						<a href="http://www.drkn.com/" target="_blank" class="anmte">
-							<div class="project-item-image a-top" style="background-image: url('dist/images/drkn.jpg');"></div>
-							<div class="project-item-text text-top text-left a-text-left">
-								<span>e-commerce</span>
-								<h3>drkn</h3>
-							</div>
-						</a>
-					</div> -->
+			<a href="http://100million.mynewsdesk.com/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/X2icLBtAAlw');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/mnd-100million.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Mynewsdesk 100 Million</div>
+					<div class="list__type">Information</div>
 				</div>
-			</div>
-		</section>
+			</a>
 
-		<section id="about" style="background-color: #ffffff;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12"><h1 style="color: #000000">section in-progress</h1></div>
+			<a href="http://learn.mynewsdesk.com/en/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/k8xHSs8xXwI');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/mnd-learn.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Mynewsdesk Learn</div>
+					<div class="list__type">Information</div>
 				</div>
-			</div>
-		</section>
+			</a>
 
+			<a href="http://futurecomms.co/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/QqvTY9zSYsc');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/mnd.png');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Mynewsdesk Futurecomms</div>
+					<div class="list__type">Information | Event</div>
+				</div>
+			</a>
 
-		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400" rel="stylesheet">
-		<link rel="stylesheet" href="dist/styles/main.css">
+			<a href="http://timraexpress.se/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/D8ejutJmOQY');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/timra.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Timra Express</div>
+					<div class="list__type">Information</div>
+				</div>
+			</a>
+
+			<a href="http://www.litomove.se/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/D8ejutJmOQY');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/litomove.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Litomove</div>
+					<div class="list__type">E-commerce | Blog</div>
+				</div>
+			</a>
+
+			<a href="http://se.truetransparency.com/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/D8ejutJmOQY');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/true.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">True Transparency</div>
+					<div class="list__type">Information</div>
+				</div>
+			</a>
+
+			<a href="http://www.bjorner.no/" target="_blank" class="list__col">
+				<!-- <div class="list__img" style="background-image: url('https://source.unsplash.com/D8ejutJmOQY');"></div> -->
+				<div class="list__img" style="background-image: url('dist/images/vitaminbjorner.jpg');"></div>
+				<div class="list__img-blocker"></div>
+				<div class="list__text">
+					<div class="list__title">Vitaminbjørner</div>
+					<div class="list__type">Information</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="scroll-indicator"><span></span></div>
+
 		<script src="dist/scripts/main.js"></script>
 	</body>
 </html>

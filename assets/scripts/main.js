@@ -236,31 +236,61 @@
 			isScrollDown: true
 		};
 
+		Scrolling.down = function() {
+		  if( $( '.list__group.is-shown' ).next( '.list__group' ).length > 0 ) {
+  			Scrolling.scrollValue += -$( '.list__group.is-shown' ).next().offset().top;
+  			$( '.list__group.is-shown' ).removeClass( 'is-shown' ).next().addClass( 'is-shown' );
+
+  			Scrolling.isScrollDown = true;
+  			Projects.animation( $( '.list__group.is-shown' ), Scrolling.isScrollDown );
+  		}
+		};
+
+		Scrolling.up = function() {
+			if( $( '.list__group.is-shown' ).prev( '.list__group' ).length > 0 ) {
+				Scrolling.scrollValue -= $( '.list__group.is-shown' ).prev().offset().top;
+				$( '.list__group.is-shown' ).removeClass( 'is-shown' ).prev().addClass( 'is-shown' );
+
+				Scrolling.isScrollDown = false
+				Projects.animation( $( '.list__group.is-shown' ), Scrolling.isScrollDown );
+			}
+		};
+
 		Scrolling.scrollY = function( scrollValue ) {
 	    Scrolling.scrollTl.to( '.list', 0.5, { y:scrollValue, ease:Power2.easeInOut } );
 		};
 
-		$( window ).bind( 'wheel', function( e ) {
+		$(window).on("touchstart", function(e) {
+	    var startingY = e.originalEvent.touches[0].pageY;
+
+	    $(window).on("touchmove", function(e) {
+        currentY = e.originalEvent.touches[0].pageY;
+        var delta = currentY - startingY;
+
+        console.log( currentY );
+
+        if( !Scrolling.scrollTl.isActive() ) {
+		      if( currentY > startingY ) {
+		      	Scrolling.up();
+		      } else {
+		      	Scrolling.down();
+		      }
+
+					Scrolling.scrollY( Scrolling.scrollValue );
+					ScrollIndicator.checker();
+				}
+	    });
+	});
+
+		$( window ).bind( 'DOMMouseScroll mousewheel', function( e ) {
 	    if( !Scrolling.scrollTl.isActive() ) {
 	    	if( e.originalEvent.deltaY >= 0 ) {
 	    		//scrolling down
-	    		if( $( '.list__group.is-shown' ).next( '.list__group' ).length > 0 ) {
-	    			Scrolling.scrollValue += -$( '.list__group.is-shown' ).next().offset().top;
-	    			$( '.list__group.is-shown' ).removeClass( 'is-shown' ).next().addClass( 'is-shown' );
-
-	    			Scrolling.isScrollDown = true;
-	    			Projects.animation( $( '.list__group.is-shown' ), Scrolling.isScrollDown );
-	    		}
+	    		Scrolling.down();
 		    }
 		    else {
 		    	//scrolling up
-	    		if( $( '.list__group.is-shown' ).prev( '.list__group' ).length > 0 ) {
-	    			Scrolling.scrollValue -= $( '.list__group.is-shown' ).prev().offset().top;
-	    			$( '.list__group.is-shown' ).removeClass( 'is-shown' ).prev().addClass( 'is-shown' );
-
-	    			Scrolling.isScrollDown = false
-	    			Projects.animation( $( '.list__group.is-shown' ), Scrolling.isScrollDown );
-	    		}
+		    	Scrolling.up();
 		    }
 
 		    Scrolling.scrollY( Scrolling.scrollValue );

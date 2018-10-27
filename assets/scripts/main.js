@@ -260,7 +260,7 @@
 	    Scrolling.scrollTl.to( '.list', 0.5, { y:scrollValue, ease:Power2.easeInOut } );
 		};
 
-		$( window ).on( 'swipeup', function( ) {
+		$( '.list' ).on( 'swipeup', function( ) {
 			if( !Scrolling.scrollTl.isActive() ) {
 				Scrolling.down();
 			}

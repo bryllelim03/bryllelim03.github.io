@@ -260,27 +260,15 @@
 	    Scrolling.scrollTl.to( '.list', 0.5, { y:scrollValue, ease:Power2.easeInOut } );
 		};
 
-		$(window).on("touchstart", function(e) {
-	    var startingY = e.originalEvent.touches[0].pageY;
-
-	    $(window).on("touchmove", function(e) {
-        currentY = e.originalEvent.touches[0].pageY;
-        var delta = currentY - startingY;
-
-        console.log( currentY );
-
-        if( !Scrolling.scrollTl.isActive() ) {
-		      if( currentY > startingY ) {
-		      	Scrolling.up();
-		      } else {
-		      	Scrolling.down();
-		      }
-
-					Scrolling.scrollY( Scrolling.scrollValue );
-					ScrollIndicator.checker();
-				}
-	    });
-	});
+		$( window ).on( 'swipeup', function( ) {
+			if( !Scrolling.scrollTl.isActive() ) {
+				Scrolling.down();
+			}
+		} ).on( 'swipedown', function() {
+			if( !Scrolling.scrollTl.isActive() ) {
+				Scrolling.up();
+			}
+		} );
 
 		$( window ).bind( 'DOMMouseScroll mousewheel', function( e ) {
 	    if( !Scrolling.scrollTl.isActive() ) {

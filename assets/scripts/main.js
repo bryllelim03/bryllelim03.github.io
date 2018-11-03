@@ -295,17 +295,16 @@
 		setTimeout( function() {
 			Nav.contentTl.play();
 			Nav.loaderTl.to( Nav.loader, 0.2, { autoAlpha: 0 }, 0 );
-			Nav.burgerClick();
-
-			Nav.burgerShowTl.play();
-			Projects.hoverAnimation();
-			Projects.animation( $( '.list__group.is-shown' ), true );
 		}, 1600 );
 
 		setTimeout( function() {
+			Nav.burgerShowTl.play();
+			Nav.burgerClick();
+			Projects.hoverAnimation();
+			Projects.animation( $( '.list__group.is-shown' ), true );
 			Nav.loaderTl.kill();
 			$( '.social-list' ).show();
-		}, 2000 );
+		}, 2400 );
 
 		$( window ).resize( function() {
 			ProjectWrap.windowWidthChecker();

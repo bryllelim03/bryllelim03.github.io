@@ -292,17 +292,20 @@
 	    }
 		} );
 
-		Nav.contentTl.play();
-		Nav.loaderTl.to( Nav.loader, 0.2, { autoAlpha: 0 }, 0 );
-		Nav.burgerClick();
-
 		setTimeout( function() {
+			Nav.contentTl.play();
+			Nav.loaderTl.to( Nav.loader, 0.2, { autoAlpha: 0 }, 0 );
+			Nav.burgerClick();
+
 			Nav.burgerShowTl.play();
-			Nav.loaderTl.kill();
 			Projects.hoverAnimation();
 			Projects.animation( $( '.list__group.is-shown' ), true );
-			$( '.social-list' ).show();
 		}, 1600 );
+
+		setTimeout( function() {
+			Nav.loaderTl.kill();
+			$( '.social-list' ).show();
+		}, 2000 );
 
 		$( window ).resize( function() {
 			ProjectWrap.windowWidthChecker();

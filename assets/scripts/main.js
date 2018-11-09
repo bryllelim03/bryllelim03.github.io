@@ -277,7 +277,11 @@
 		} );
 
 		$( window ).bind( 'wheel', function( e ) {
-	    if( !Scrolling.scrollTl.isActive() ) {
+		    if( Scrolling.scrollTl.isActive() ) {
+		    	console.log('true!');
+		    	return
+		    }
+	    	
 	    	if( e.originalEvent.deltaY >= 0 ) {
 	    		//scrolling down
 	    		Scrolling.down();
@@ -289,7 +293,6 @@
 
 		    Scrolling.scrollY( Scrolling.scrollValue );
 		    ScrollIndicator.checker();
-	    }
 		} );
 
 		setTimeout( function() {

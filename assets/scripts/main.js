@@ -260,6 +260,21 @@
 	    Scrolling.scrollTl.to( '.list', 0.5, { y:scrollValue, ease:Power2.easeInOut } );
 		};
 
+		$( '.list' ).on( 'swipeup', function( ) {
+			if( !Scrolling.scrollTl.isActive() ) {
+				Scrolling.down();
+
+				Scrolling.scrollY( Scrolling.scrollValue );
+		    ScrollIndicator.checker();
+			}
+		} ).on( 'swipedown', function() {
+			if( !Scrolling.scrollTl.isActive() ) {
+				Scrolling.up();
+				
+				Scrolling.scrollY( Scrolling.scrollValue );
+		    ScrollIndicator.checker();
+			}
+		} );
 
 		var isScrolling = 0;
 

@@ -168,7 +168,7 @@
 		projectTl.staggerFromTo( $listImg, 0.5, { '-webkit-filter': 'grayscale(100%)', 'filter': 'grayscale(100%)' }, { '-webkit-filter': 'grayscale(0%)', 'filter': 'grayscale(0%)' }, 0.2, 0.7 );
 		projectTl.staggerFrom( $listText, 0.1, { 'background': 'none' }, 0.2, 0 );
 		projectTl.staggerTo( $listTitle, 0.5, { autoAlpha: 1 }, 0.2, 0.7 );
-		projectTl.staggerFromTo( $listTitleChar, 0.6, { cycle: { y: [30, -100, 60, 23, -40 ] }, autoAlpha: 0 }, { y: 0, x:0, autoAlpha: 1 }, 0.03, 0.7 );
+		projectTl.staggerFromTo( $listTitleChar, 0.6, { cycle: { y: [30, -100, 60, 23, -40 ] }, autoAlpha: 0 }, { y: 0, x:0, autoAlpha: 1 }, 0.01, 0.7 );
 		projectTl.staggerFromTo( $listType, 0.4, { x: -30, autoAlpha: 0 }, { x: 0, autoAlpha: 1 }, 0.2, 1 );
 	};
 
@@ -260,29 +260,13 @@
 	    Scrolling.scrollTl.to( '.list', 0.5, { y:scrollValue, ease:Power2.easeInOut } );
 		};
 
-		$( '.list' ).on( 'swipeup', function( ) {
-			if( !Scrolling.scrollTl.isActive() ) {
-				Scrolling.down();
 
-				Scrolling.scrollY( Scrolling.scrollValue );
-		    ScrollIndicator.checker();
-			}
-		} ).on( 'swipedown', function() {
-			if( !Scrolling.scrollTl.isActive() ) {
-				Scrolling.up();
-				
-				Scrolling.scrollY( Scrolling.scrollValue );
-		    ScrollIndicator.checker();
-			}
-		} );
+		var isScrolling = 0;
 
 		$( window ).bind( 'wheel', function( e ) {
-		    if( Scrolling.scrollTl.isActive() ) {
-		    	console.log('true!');
-		    	return
-		    }
-	    	
-	    	if( e.originalEvent.deltaY >= 0 ) {
+    	if( isScrolling == 0 ) {
+    		isScrolling = 1;
+    		if( e.originalEvent.deltaY >= 0 ) {
 	    		//scrolling down
 	    		Scrolling.down();
 		    }
@@ -293,6 +277,11 @@
 
 		    Scrolling.scrollY( Scrolling.scrollValue );
 		    ScrollIndicator.checker();
+    		
+    		setTimeout( function() { 
+    			isScrolling = 0;
+    		}, 2200 );
+    	}
 		} );
 
 		setTimeout( function() {

@@ -147,7 +147,7 @@
 	Projects.animation = function( projectShown, isScrollDown ) {
 		var projectTl = new TimelineMax();
 		var $listCol = $( '.list__col', projectShown );
-		var $listImgBlocker = $( '.list__img-blocker', projectShown );
+		// var $listImgBlocker = $( '.list__img-blocker', projectShown );
 		var $listImg = $( '.list__img', projectShown );
 		var $listText = $( '.list__text', projectShown );
 		var $listTitle = $( '.list__title', projectShown );
@@ -164,7 +164,7 @@
 
 		projectTl.staggerTo( $listImg, 0.5, { autoAlpha: 1 }, 0.2, 0 );
 		projectTl.staggerFromTo( $listCol, 0.5, { y: yPos }, { y:0, ease:Power1.easeOut, clearProps:"scale" }, 0.2, 0 )
-		projectTl.staggerFromTo( $listImgBlocker, 0.5, { left: '-100%' }, { left: '100%' }, 0.2, 0.4 );
+		// projectTl.staggerFromTo( $listImgBlocker, 0.5, { left: '-100%' }, { left: '100%' }, 0.2, 0.4 );
 		projectTl.staggerFromTo( $listImg, 0.5, { '-webkit-filter': 'grayscale(100%)', 'filter': 'grayscale(100%)' }, { '-webkit-filter': 'grayscale(0%)', 'filter': 'grayscale(0%)' }, 0.2, 0.7 );
 		projectTl.staggerFrom( $listText, 0.1, { 'background': 'none' }, 0.2, 0 );
 		projectTl.staggerTo( $listTitle, 0.5, { autoAlpha: 1 }, 0.2, 0.7 );

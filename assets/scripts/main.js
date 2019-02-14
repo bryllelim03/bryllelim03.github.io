@@ -168,7 +168,7 @@
 		projectTl.staggerFromTo( $listImg, 0.5, { '-webkit-filter': 'grayscale(100%)', 'filter': 'grayscale(100%)' }, { '-webkit-filter': 'grayscale(0%)', 'filter': 'grayscale(0%)' }, 0.2, 0.7 );
 		projectTl.staggerFrom( $listText, 0.1, { 'background': 'none' }, 0.2, 0 );
 		projectTl.staggerTo( $listTitle, 0.5, { autoAlpha: 1 }, 0.2, 0.7 );
-		projectTl.staggerFromTo( $listTitleChar, 0.6, { cycle: { y: [30, -100, 60, 23, -40 ] }, autoAlpha: 0 }, { y: 0, x:0, autoAlpha: 1 }, 0.01, 0.7 );
+		projectTl.staggerFromTo( $listTitleChar, 0.6, { cycle: { y: [20, -40, 30, 13, -30 ] }, autoAlpha: 0 }, { y: 0, x:0, autoAlpha: 1 }, 0.01, 0.7 );
 		projectTl.staggerFromTo( $listType, 0.4, { x: -30, autoAlpha: 0 }, { x: 0, autoAlpha: 1 }, 0.2, 1 );
 	};
 

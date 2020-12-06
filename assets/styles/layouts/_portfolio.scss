@@ -103,6 +103,13 @@
 	visibility: hidden;
 }
 
+.list__owner {
+	opacity: 0;
+    visibility: hidden;
+	margin-top: 10px;
+	font-size: 1.2rem;
+}
+
 .social-list {
 	display: none;
 	list-style-type: none;

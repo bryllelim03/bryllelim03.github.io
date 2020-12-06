@@ -153,6 +153,7 @@
 		var $listTitle = $( '.list__title', projectShown );
 		var $listTitleChar = $( '.list__title span', projectShown );
 		var $listType = $( '.list__type', projectShown );
+		var $listOwner = $( '.list__owner', projectShown );
 		var isScrollingDown = isScrollDown;
 		var yPos;
 
@@ -170,6 +171,7 @@
 		projectTl.staggerTo( $listTitle, 0.5, { autoAlpha: 1 }, 0.2, 0.7 );
 		projectTl.staggerFromTo( $listTitleChar, 0.6, { cycle: { y: [20, -40, 30, 13, -30 ] }, autoAlpha: 0 }, { y: 0, x:0, autoAlpha: 1 }, 0.01, 0.7 );
 		projectTl.staggerFromTo( $listType, 0.4, { x: -30, autoAlpha: 0 }, { x: 0, autoAlpha: 1 }, 0.2, 1 );
+		projectTl.staggerFromTo( $listOwner, 0.4, { x: -30, autoAlpha: 0 }, { x: 0, autoAlpha: 1 }, 0.2, 1.1 );
 	};
 
 	Projects.hoverAnimation = function() {
